@@ -1,7 +1,28 @@
 aid: plate-iq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/plate-iq.png
 name: Plate Iq
-description: Plate Iq is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Plate IQ (now operating as Ottimate) is an AI-powered accounts payable (AP)
+  automation platform for restaurants, hospitality groups, and multi-location
+  finance teams. It captures and codes vendor invoices with line-item accuracy,
+  matches purchase orders, routes approvals, detects fraud and overpayments, and
+  processes vendor payments, syncing bi-directionally with accounting and ERP
+  systems such as QuickBooks, NetSuite, Sage Intacct, Acumatica, and Microsoft
+  Dynamics. The company was surfaced as a Y Combinator portfolio company and
+  added to the API Evangelist network. As of this enrichment pass, Ottimate does
+  not publish a public developer API, REST reference, or developer portal — its
+  integrations are pre-built, managed connectors rather than a self-service API.
 url: https://raw.githubusercontent.com/api-evangelist/plate-iq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Accounts Payable
+- Invoice Automation
+- Restaurants
+- Hospitality
+- Spend Management
+- FinTech
+- ERP Integration
 apis: []
+common:
+- type: DomainSecurity
+  url: security/plate-iq-domain-security.yml
+- type: Website
+  url: https://ottimate.com/
+- type: Blog
+  url: https://ottimate.com/blog/
+- type: Support
+  url: https://ottimate.com/support/
+- type: Integrations
+  url: https://ottimate.com/integrations/
+- type: PrivacyPolicy
+  url: https://ottimate.com/privacy-policy/
+- type: TermsOfService
+  url: https://ottimate.com/terms-of-service/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
